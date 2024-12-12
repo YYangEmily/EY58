@@ -39,7 +39,7 @@ p <- ggplot(h, aes(x=Hours)) +
 p<- p +labs(title=" Nanoluc 4X ",
         x ="Time (hours)", y = "Luminescence (AU)")
 p
-
+#ggsave("4X Lum.png")
  
 p1 <- ggplot(h, aes(x=Hours)) + 
   geom_point(aes(y = A5), color="steelblue", alpha = 0.5) + 
@@ -58,7 +58,7 @@ p1<- p1 +labs(title=" Nanoluc 1X ",
         x ="Time (hours)", y = "Luminescence (AU)")
 
 p1
-
+#ggsave("1X Lum.png")
 p2 <- ggplot(h, aes(x=Hours)) + 
   geom_point(aes(y = A9), color="steelblue", alpha = 0.5) + 
   geom_point(aes(y = A10), color="steelblue", alpha = 0.5) + 
@@ -77,6 +77,7 @@ p2<- p2 +labs(title=" Nanoluc 0.25X ",
         x ="Time (hours)", y = "Luminescence (AU)")
 
 p2
+#ggsave("0.25X Lum.png")
 ```
 
 ```{r}
@@ -97,7 +98,7 @@ q <- ggplot(g, aes(x=Hours)) +
 q<- q +labs(title=" Nanoluc 4X ",
         x ="Time (hours)", y = "OD")
 q
-
+#ggsave("4X OD.png")
  
 q1 <- ggplot(g, aes(x=Hours)) + 
   geom_point(aes(y = A5), color="steelblue", alpha = 0.5) + 
@@ -116,6 +117,7 @@ q1<- q1 +labs(title=" Nanoluc 1X ",
         x ="Time (hours)", y = "OD")
 
 q1
+#ggsave("1X OD.png")
 
 q2 <- ggplot(g, aes(x=Hours)) + 
   geom_point(aes(y = A9), color="steelblue", alpha = 0.5) + 
@@ -135,6 +137,7 @@ q2<- q2 +labs(title=" Nanoluc 0.25X",
         x ="Time (hours)", y = "OD")
 
 q2
+#ggsave("0.25X OD.png")
 ```
 
 ```{r}
@@ -155,7 +158,7 @@ r<- ggplot()+
 r<- r +labs(title=" Nanoluc OD 1",
         x ="OD", y = "Luminescence")
 r
-
+#ggsave("OD1.png")
 r1<- ggplot()+
   geom_point(data = data.frame(x = g$A5, y = h$A5), aes(x = x, y = y), color="orange", alpha = 0.5)+
    geom_point(data = data.frame(x = g$A6, y = h$A6), aes(x = x, y = y), color="orange", alpha = 0.5)+
@@ -173,7 +176,7 @@ color="orange", alpha = 0.5)+
 r1<- r1 +labs(title=" Nanoluc OD 0.1",
         x ="OD", y = "Luminescence")
 r1
-  
+#ggsave("OD 0.1.png")
 r2<- ggplot()+
   geom_point(data = data.frame(x = g$A9, y = h$A9), aes(x = x, y = y), color="pink", alpha = 0.5)+
    geom_point(data = data.frame(x = g$A10, y = h$A10), aes(x = x, y = y), color="pink", alpha = 0.5)+
@@ -191,4 +194,5 @@ r2<- r2 +labs(title=" Nanoluc OD 0.01",
         x ="OD", y = "Luminescence")
 
 r2
+#ggsave("OD 0.01.png")
 ```
