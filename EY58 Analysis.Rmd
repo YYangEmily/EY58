@@ -78,6 +78,19 @@ p2<- p2 +labs(title=" Nanoluc 0.25X ",
 
 p2
 #ggsave("0.25X Lum.png")
+
+p3 <- ggplot(h, aes(x=Hours)) + 
+  geom_point(aes(y = H10), color="brown", alpha = 0.5) + 
+  geom_point(aes(y = H11), color="brown", alpha = 0.5) + 
+  geom_point(aes(y = H12), color="brown", alpha = 0.5)+
+  geom_point(aes(y = H7), color="black", alpha = 0.5)+
+  geom_point(aes(y = H8), color="black", alpha = 0.5)+
+  geom_point(aes(y = H9), color="black", alpha = 0.5)
+
+p3<- p3 +labs(title="No Substrate",
+        x ="Time (hours)", y = "Luminescence (AU)")
+p3
+#ggsave("0X Lum.png")
 ```
 
 ```{r}
@@ -138,6 +151,19 @@ q2<- q2 +labs(title=" Nanoluc 0.25X",
 
 q2
 #ggsave("0.25X OD.png")
+
+q3 <- ggplot(g, aes(x=Hours)) + 
+  geom_point(aes(y = H10), color="brown", alpha = 0.5) + 
+  geom_point(aes(y = H11), color="brown", alpha = 0.5) + 
+  geom_point(aes(y = H12), color="brown", alpha = 0.5)+
+  geom_point(aes(y = H7), color="black", alpha = 0.5)+
+  geom_point(aes(y = H8), color="black", alpha = 0.5)+
+  geom_point(aes(y = H9), color="black", alpha = 0.5)
+
+q3<- q3 +labs(title="No Substrate",
+        x ="Time (hours)", y = "OD")
+q3
+#ggsave("0X OD.png")
 ```
 
 ```{r}
