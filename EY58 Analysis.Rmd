@@ -173,45 +173,49 @@ r<- ggplot()+
    geom_point(data = data.frame(x = g$A2, y = h$A2), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
   geom_point(data = data.frame(x = g$B1, y = h$B1), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
    geom_point(data = data.frame(x = g$B2, y = h$B2), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$C3, y = h$C3), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$C4, y = h$C4), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$D3, y = h$D3), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$D4, y = h$D4), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$E1, y = h$E1), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$E2, y = h$E2), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$F1, y = h$F1), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$F2, y = h$F2), aes(x = x, y = y), color="steelblue", alpha = 0.5)
+    geom_point(data = data.frame(x = g$A5, y = h$A5), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$A6, y = h$A6), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$B5, y = h$B5), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$B6, y = h$B6), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$A9, y = h$A9), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$A10, y = h$A10), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$B9, y = h$B9), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$B10, y = h$B10), aes(x = x, y = y), color="steelblue", alpha = 0.5)
 r<- r +labs(title=" Nanoluc OD 1",
         x ="OD", y = "Luminescence")
 r
 #ggsave("OD1.png")
+
+
 r1<- ggplot()+
-  geom_point(data = data.frame(x = g$A5, y = h$A5), aes(x = x, y = y), color="orange", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$A6, y = h$A6), aes(x = x, y = y), color="orange", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$B5, y = h$B5), aes(x = x, y = y), color="orange", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$B6, y = h$B6), aes(x = x, y = y), color="orange", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$C3, y = h$C3), aes(x = x, y = y), color="orange", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$C4, y = h$C4), aes(x = x, y = y), color="orange", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$D3, y = h$D3), aes(x = x, y = y), color="orange", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$D4, y = h$D4), aes(x = x, y = y), color="orange", alpha = 0.5)+
   geom_point(data = data.frame(x = g$C7, y = h$C7), aes(x = x, y = y), color="orange", alpha = 0.5)+
    geom_point(data = data.frame(x = g$C8, y = h$C8), aes(x = x, y = y), color="orange", alpha = 0.5)+
   geom_point(data = data.frame(x = g$D7, y = h$D7), aes(x = x, y = y), color="orange", alpha = 0.5)+
    geom_point(data = data.frame(x = g$D8, y = h$D8), aes(x = x, y = y), color="orange", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$E5, y = h$E5), aes(x = x, y = y),
-color="orange", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$E6, y = h$E6), aes(x = x, y = y), color="orange", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$F5, y = h$F5), aes(x = x, y = y), color="orange", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$F6, y = h$F6), aes(x = x, y = y), color="orange", alpha = 0.5)
+   geom_point(data = data.frame(x = g$C11, y = h$C11), aes(x = x, y = y), color="orange", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$C12, y = h$C12), aes(x = x, y = y), color="orange", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$D11, y = h$D11), aes(x = x, y = y), color="orange", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$D12, y = h$D12), aes(x = x, y = y), color="orange", alpha = 0.5)
+ 
 r1<- r1 +labs(title=" Nanoluc OD 0.1",
         x ="OD", y = "Luminescence")
 r1
 #ggsave("OD 0.1.png")
+
 r2<- ggplot()+
-  geom_point(data = data.frame(x = g$A9, y = h$A9), aes(x = x, y = y), color="pink", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$A10, y = h$A10), aes(x = x, y = y), color="pink", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$B9, y = h$B9), aes(x = x, y = y), color="pink", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$B10, y = h$B10), aes(x = x, y = y), color="pink", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$C11, y = h$C11), aes(x = x, y = y), color="pink", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$C12, y = h$C12), aes(x = x, y = y), color="pink", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$D11, y = h$D11), aes(x = x, y = y), color="pink", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$D12, y = h$D12), aes(x = x, y = y), color="pink", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$E1, y = h$E1), aes(x = x, y = y), color="pink", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$E2, y = h$E2), aes(x = x, y = y), color="pink", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$F1, y = h$F1), aes(x = x, y = y), color="pink", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$F2, y = h$F2), aes(x = x, y = y), color="pink", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$E5, y = h$E5), aes(x = x, y = y),
+color="pink", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$E6, y = h$E6), aes(x = x, y = y), color="pink", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$F5, y = h$F5), aes(x = x, y = y), color="pink", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$F6, y = h$F6), aes(x = x, y = y), color="pink", alpha = 0.5)+
   geom_point(data = data.frame(x = g$E9, y = h$E9), aes(x = x, y = y), color="pink", alpha = 0.5)+
    geom_point(data = data.frame(x = g$E10, y = h$E10), aes(x = x, y = y), color="pink", alpha = 0.5)+
   geom_point(data = data.frame(x = g$F9, y = h$F9), aes(x = x, y = y), color="pink", alpha = 0.5)+
